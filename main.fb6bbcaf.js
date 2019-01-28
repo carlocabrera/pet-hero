@@ -286,7 +286,7 @@ function fetchAnimals(e) {
   } // Fetch Pets
 
 
-  (0, _fetchJsonp.default)("http://api.petfinder.com/pet.find?format=json&key=03af037115fbde034aaa5701dbace9c2&animal=".concat(animal, "&location=").concat(zip, "&callback=callback"), {
+  (0, _fetchJsonp.default)("https://api.petfinder.com/pet.find?format=json&key=03af037115fbde034aaa5701dbace9c2&animal=".concat(animal, "&location=").concat(zip, "&callback=callback"), {
     jsonpCallbackFunction: 'callback'
   }).then(function (res) {
     return res.json();
